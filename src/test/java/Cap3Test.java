@@ -19,7 +19,7 @@ public class Cap3Test {
 		Object bean1 = app.getBean("person");
 		Object bean2 = app.getBean("person");
 		System.out.println(bean1 == bean2);
-		//结论:bean1就是bean2,同一个对象
+		//结论:如果为true,bean1就是bean2,同一个对象
 		
 		//app.getEnvironment();
 	}
