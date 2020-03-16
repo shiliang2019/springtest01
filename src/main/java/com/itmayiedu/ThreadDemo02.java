@@ -7,7 +7,7 @@ class CreateThread extends Thread {
 	 * run方法执行 需要线程执行的任务，代码。
 	 */
 	public void run() {
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 1000; i++) {
 			System.out.println("run() i:" + i);
 		}
 	}
@@ -33,7 +33,7 @@ public class ThreadDemo02 {
 		// 注意 使用多线程情况，代码不会重写往下进行执行。会同时并行执行。
 		createThread.start();
 		System.out.println("线程已经开始启动 main");
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 1000; i++) {
 			System.out.println("main() i:" + i);
 		}
 
