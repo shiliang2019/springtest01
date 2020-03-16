@@ -15,6 +15,7 @@ public class MainTest1 {
 		String[] namesForBean = app.getBeanNamesForType(Person.class);
 		for(String name:namesForBean){
 			System.out.println(name);
+			
 		}
 	}
 }
