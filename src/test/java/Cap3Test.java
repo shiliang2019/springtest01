@@ -21,5 +21,6 @@ public class Cap3Test {
 		System.out.println(bean1 == bean2);
 		//结论:bean1就是bean2,同一个对象
 		
+		//app.getEnvironment();
 	}
 }

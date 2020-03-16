@@ -12,7 +12,7 @@ public class Cap2Test {
 		String[] names = app.getBeanDefinitionNames();
 		
 		for(String name:names){
-			System.out.println(name);
+			System.out.println("### "+name);
 		}
 	}
 }

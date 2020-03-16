@@ -15,8 +15,6 @@ import com.enjoy.cap2.controller.OrderController;
 @ComponentScan(value="com.enjoy.cap2", includeFilters={		
 		@Filter(type=FilterType.CUSTOM, classes={JamesTypeFilter.class})		
 }, useDefaultFilters=false)
-
-
 public class Cap2MainConfig {
 	//给容器中注册一个bean, 类型为返回值的类型, 
 	@Bean
