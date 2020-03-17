@@ -32,6 +32,7 @@ public class ThreadDemo02 {
 		// 启动一个线程 是调用start方法 不是run方法。 调用run方法相当于主线程执行。
 		// 注意 使用多线程情况，代码不会从上往下进行执行。会同时并行执行。
 		createThread.start();
+		//createThread.start();
 		System.out.println("线程已经开始启动 main");
 		for (int i = 0; i < 1000; i++) {
 			System.out.println("main() i:" + i);
