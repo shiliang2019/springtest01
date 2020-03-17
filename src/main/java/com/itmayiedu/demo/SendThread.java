@@ -30,7 +30,7 @@ class UserThread extends Thread {
 	 */
 	public void run() {
 		for (UserEntity userEntity : list) {
-			System.out.println("threadName:" + Thread.currentThread().getName() + "-学员编号:" + userEntity.getUserId()
+			System.out.println("threadName:" + Thread.currentThread().getName() + " ###学员编号:" + userEntity.getUserId()
 					+ "---学员名称:" + userEntity.getUserName());
 			// 调用发送短信具体代码
 		}
@@ -66,7 +66,6 @@ public class SendThread {
 			list.add(userEntity);
 		}
 		return list;
-
 	}
 
 	public static void main(String[] args) {
@@ -77,8 +76,8 @@ public class SendThread {
 		int userThreadPage = 50;
 		// 计算所有线程数
 		List<List<UserEntity>> splitUserList = ListUtils.splitList(listUserEntity, userThreadPage);
-		int threadSaze = splitUserList.size();
-		for (int i = 0; i < threadSaze; i++) {
+		int threadSize = splitUserList.size();
+		for (int i = 0; i < threadSize; i++) {
 			List<UserEntity> list = splitUserList.get(i);
 			UserThread userThread = new UserThread(list);
 			// 3.执行任务发送短信
