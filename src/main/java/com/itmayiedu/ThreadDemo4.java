@@ -12,10 +12,9 @@ package com.itmayiedu;
 public class ThreadDemo4 {
 
 	public static void main(String[] args) {
-		System.out.println("创建线成功！");
+		System.out.println("创建线程！");
 		//使用匿名内部类方式创建线程
 		new Thread(new Runnable() {
-
 			@Override
 			public void run() {
 				for (int i = 0; i < 100; i++) {
